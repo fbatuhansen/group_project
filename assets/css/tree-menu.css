@@ -1,0 +1,125 @@
+/* MENU-LEFT
+-------------------------- */
+/* Genel ayarlar */
+#left ul.nav {
+    margin-bottom: 2px;
+    font-size: 12px; /* Menü yazı boyutu */
+    border: none; /* Menü çerçevesi kaldırıldı */
+    background: #fff; /* Menü arka planı beyaz */
+}
+
+/* Menü öğeleri arası açık gri çizgi */
+#left ul.nav li {
+    border-bottom: 1px solid #ddd; /* Açık gri çizgi */
+}
+#left ul.nav li:last-child {
+    border-bottom: none; /* Son öğede çizgi yok */
+}
+
+/* Menü tasarımı */
+#left ul.nav li a {
+    display: flex; /* Flexbox düzeni */
+    justify-content: flex-start; /* "+" simgesini sağa yaslarken yazılar sola hizalanır */
+    align-items: center; /* Dikey ortalama */
+    padding: 10px 12px; /* Menü içi boşluk */
+    text-decoration: none; /* Altı çizili olmasın */
+    color: #000; /* Varsayılan yazı rengi siyah */
+    background-color: transparent; /* Arka plan şeffaf */
+}
+
+/* Menü isimleri sola yaslama ve boşluk */
+#left ul.nav li a .lbl {
+    font-size: 16px; /* Menü yazı boyutu */
+    color: inherit; /* Üst elemandan yazı rengini devral */
+    margin-left: 10px; /* Yazının sol tarafına boşluk ekler */
+    margin-right: auto; /* "+" simgesinden önce boşluk */
+}
+
+/* '+' simgesi tasarımı */
+#left ul.nav li a .plus-icon {
+    font-size: 16px; /* '+' simgesi boyutu */
+    color: #000; /* Varsayılan siyah */
+    font-weight: bold; /* '+' simgesi kalın */
+}
+
+/* Hover durumunda efektler */
+#left ul.nav li a:hover {
+    color: #e4144d; /* Yazı rengi kırmızı */
+    background-color: transparent; /* Arka plan değişmez */
+}
+#left ul.nav li a:hover .plus-icon {
+    color: #e4144d; /* '+' simgesi hover'da kırmızı */
+}
+#left ul.nav li a:hover .lbl {
+    color: #e4144d; /* Menü yazısı hover'da kırmızı */
+}
+
+/* Alt menüler (children) */
+#left ul.nav ul {
+    padding-left: 0; /* Alt menülerin kenar boşluğu */
+    width: auto;
+}
+#left ul.nav ul.children {
+    padding-left: 12px; /* Çocuk menüler içeri kaydırılır */
+    width: auto;
+}
+#left ul.nav ul.children li {
+    margin-left: 0px;
+}
+
+/* Alt menü bağlantıları */
+#left ul.nav li.parent ul li a {
+    color: #000; /* Varsayılan siyah renk */
+    border: none; /* Çerçeve yok */
+    display: block;
+    padding-left: 20px; /* Çocuk menüler için iç boşluk */
+}
+
+/* Mevcut (aktif) öğe tasarımı */
+#left ul.nav li.current > a {
+    font-weight: bold; /* Aktif menü yazısı kalın */
+    color: #e4144d; /* Aktif öğe yazı rengi kırmızı */
+}
+
+/* THEMATIQUE
+------------------------- */
+/* Theme adjustments for simpler look */
+#left ul.nav > li.item-1.parent > a {
+    border: none; /* Çerçeve yok */
+}
+#left ul.nav > li.item-1.parent > a:hover {
+    color: #e4144d; /* Hover durumda kırmızı */
+}
+#left ul.nav > li.item-1 .lbl {
+    color: inherit; /* Varsayılan renk */
+}
+
+/* Tema 2 */
+#left ul.nav {
+    background: #fff; /* Menü arka plan beyaz */
+}
+#left ul.nav > li.cat-level-1 {
+    margin-bottom: 0; /* Ekstra boşluk kaldırıldı */
+}
+#left ul.nav > li.cat-level-1.parent > a {
+    border: none; /* Çerçeve yok */
+}
+#left ul.nav > li.cat-level-1 li.current > a {
+    color: #e4144d; /* Aktif öğe kırmızı */
+}
+
+/* Tema 3 */
+#left ul.nav > li.item-15.parent > a {
+    border: none; /* Çerçeve yok */
+}
+#left ul.nav > li.item-15 .lbl {
+    color: inherit; /* Varsayılan renk */
+}
+
+/* Tema 4 */
+#left ul.nav > li.item-22.parent > a {
+    border: none; /* Çerçeve yok */
+}
+#left ul.nav > li.item-22 .lbl {
+    color: inherit; /* Varsayılan renk */
+}
